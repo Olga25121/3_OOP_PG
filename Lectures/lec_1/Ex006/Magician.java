@@ -1,4 +1,4 @@
-package Lesson_07.Ex006;
+package Lectures.lec_1.Ex006;
 
 public class Magician extends BaseHero {
 
