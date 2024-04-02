@@ -1,6 +1,6 @@
 package Lectures.lec_1.Ex005;
 
-import Lesson_07.Ex005.Magician;
+import Lectures.lec_1.Ex006.Magician;
 
 public class Program {
     public static void main(String[] args) {
