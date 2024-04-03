@@ -1,4 +1,4 @@
-package Seminars.OOPLessonOne.task_1;
+package Seminars.OOPLessonOne;
 
 import java.util.List;
 

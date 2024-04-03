@@ -3,7 +3,7 @@
 // содержащий в себе методы initProducts (List <Product>) 
 // сохраняющий в себе список исходных продуктов и getProduct(String name)
 
-package Seminars.OOPLessonOne.task_1;
+package Seminars.OOPLessonOne;
 
 import java.util.ArrayList;
 import java.util.List;
