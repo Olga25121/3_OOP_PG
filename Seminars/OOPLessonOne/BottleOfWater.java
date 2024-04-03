@@ -3,7 +3,7 @@ package Seminars.OOPLessonOne;
 public class BottleOfWater extends Product {
     private int volume;
 
-    public BottleOfWater(int price, String name, int volume) {
+    public BottleOfWater(String name, int price, int volume) {
         super(price, name);
         this.volume = volume;
     }
@@ -14,10 +14,10 @@ public class BottleOfWater extends Product {
 
     @Override
     public String toString() {
-        return "BottleOfVatter{" +
-                "volume=" + volume +
-                ", price=" + super.getPrice() +
-                ", name='" + super.getName() + '\'' +
+        return "BottleOfVatter {" +
+                "name:"+"\t" + super.getName() + "\t" +
+                "volume = " + volume + 
+                ", price = " + super.getPrice() +
                 "}";
     }
 

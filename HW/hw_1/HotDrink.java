@@ -23,9 +23,9 @@ public class HotDrink extends BottleOfWater {
 
     @Override
     public String toString() {
-        return "HotDrink{" +
-                "name='" + super.getName() +
-                ", price=" + super.getPrice() +
+        return "HotDrink {" +
+                "name:"  + "\t" + super.getName() + "\t" +
+                " price=" + super.getPrice() +
                 ", volume=" + super.getVolume() +
                 ", temperature=" + temperature +
                 '\'' +
