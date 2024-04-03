@@ -3,6 +3,7 @@ package Seminars.OOPLessonOne.task_1;
 import java.util.List;
 
 public class VendingMachine {
+    
     private List<Product> productList;
 
     void initProduct(List<Product> a) {
