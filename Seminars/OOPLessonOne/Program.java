@@ -1,23 +1,58 @@
-// Task 1.
-// Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат, 
-// содержащий в себе методы initProducts (List <Product>) 
-// сохраняющий в себе список исходных продуктов и getProduct(String name)
-
 package Seminars.OOPLessonOne;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Program {
     public static void main(String[] args) {
-        Product product1 = new Product();
-        product1.setName("Chocolate");
-        product1.setCost(500);
 
-        VendingMachine vendingMachine1 = new VendingMachine();
+        // BottleOfVatter b = new BottleOfVatter(123, "123", 1);
+        // System.out.println(b);
+
         List<Product> productList = new ArrayList<>();
-        productList.add(product1);
-        vendingMachine1.initProduct(productList);
-        System.out.println(vendingMachine1.getProduct("Chocolate"));
+
+        // productList.add(new BottleOfVatter(123, "qwe", 100));
+        // productList.add(new BottleOfVatter(200, "qwe", 150));
+        // productList.add(new BottleOfVatter(500, "zxcg", 1000));
+        // productList.add(new BottleOfVatter(123, "qaffwe", 10));
+
+        productList.add(new HotDrink(250, "Coffee", 150, 95));
+        productList.add(new HotDrink(200, "Coffee", 100, 95));
+        productList.add(new HotDrink(150, "BkackTea", 150, 90));
+        productList.add(new HotDrink(100, "BkackTea", 100, 90));
+        productList.add(new HotDrink(200, "GreenTea", 200, 85));
+        productList.add(new HotDrink(150, "GreenTea", 150, 85));
+
+        // BottleOfVatterVendingMachine vendingMachine = new BottleOfVatterVendingMachine();
+
+        HotDrinkVM vendingMachine = new HotDrinkVM();
+        vendingMachine.initProduct(productList);
+
+        // System.out.println(vendingMachine.getProduct("qwe", 150));
+        // System.out.println(vendingMachine.getProduct("qwe"));
+
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println(vendingMachine.getProduct("Coffee"));
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println(vendingMachine.getProduct("BkackTea"));
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println(vendingMachine.getProduct("GreenTea"));
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println(vendingMachine.getProduct("GreenTea", 150, 85));
+        System.out.println("-----------------------------------------------------------------");
     }
 }
+// public class Program {
+//     public static void main(String[] args) {
+//         Product product1 = new Product();
+//         product1.setName("Chocolate");
+//         product1.setCost(500);
+
+//         VendingMachine vendingMachine1 = new VendingMachine();
+//         List<Product> productList = new ArrayList<>();
+//         productList.add(product1);
+//         vendingMachine1.initProduct(productList);
+//         System.out.println(vendingMachine1.getProduct("Chocolate"));
+//     }
+// }
