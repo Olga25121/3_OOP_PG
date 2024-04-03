@@ -1,4 +1,4 @@
-package Seminars.OOPLessonOne;
+package HW.hw_1;
 
 public abstract class Product {
     private String name;

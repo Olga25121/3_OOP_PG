@@ -3,7 +3,7 @@ package Seminars.OOPLessonOne;
 
 import java.util.List;
 
-public class BottleOfWaterVM implements VendingMachine {
+public class BottleOfWaterVendingMachine implements VendingMachine {
     private List<Product> productList;
     @Override
     public void initProduct(List<Product> productList) {
