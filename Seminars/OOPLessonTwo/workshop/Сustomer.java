@@ -1,6 +1,6 @@
 package Seminars.OOPLessonTwo.workshop;
 
-public abstract class Сustomer implements ActorBehaviour {
+public abstract class Сustomer implements СustomerBehaviour {
     protected String name;
     protected boolean isMakeOrder;
     protected boolean isTakeOrder;

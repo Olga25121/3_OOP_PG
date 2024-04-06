@@ -1,6 +1,6 @@
 package Seminars.OOPLessonTwo.workshop;
 
-public interface ActorBehaviour {
+public interface СustomerBehaviour {
     void setMakeOrder(boolean isMakeOrder);
     void setTakeOrder(boolean isTakeOrder);
     boolean isMakeOrder();
