@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Market implements QueueBehaviour, MarketBehaviour {
-    private List<Actor> actorList = new ArrayList<>();
+    private List<Сustomer> actorList = new ArrayList<>();
 
     @Override
     public void giveOrders() {
-        for (Actor actor : actorList) {
+        for (Сustomer actor : actorList) {
             if (actor.isMakeOrder) {
                 actor.setTakeOrder(true);
                 System.out.println(actor.getName() + " получил заказ");
@@ -18,8 +18,8 @@ public class Market implements QueueBehaviour, MarketBehaviour {
 
     @Override
     public void releaseFromQueue() {
-        List<Actor> relasedActors = new ArrayList<>();
-        for (Actor actor : actorList) {
+        List<Сustomer> relasedActors = new ArrayList<>();
+        for (Сustomer actor : actorList) {
             if (actor.isTakeOrder()) {
                 relasedActors.add(actor);
                 System.out.println(actor.getName() + " вышел из очереди");
@@ -29,14 +29,14 @@ public class Market implements QueueBehaviour, MarketBehaviour {
     }
 
     @Override
-    public void takeInQueue(Actor actor) {
+    public void takeInQueue(Сustomer actor) {
         actorList.add(actor);
         System.out.println(actor.getName() + " встал в очередь");
     }
 
     @Override
     public void takeOrders() {
-        for (Actor actor : actorList) {
+        for (Сustomer actor : actorList) {
             if (!actor.isMakeOrder) {
                 actor.setMakeOrder(true);
                 System.out.println(actor.getName() + " сделал заказ");
@@ -45,14 +45,14 @@ public class Market implements QueueBehaviour, MarketBehaviour {
     }
 
     @Override
-    public void acceptToMarket(Actor actor) {
+    public void acceptToMarket(Сustomer actor) {
         takeInQueue(actor);
         System.out.println(actor.getName() + " пришёл в магазин");
     }
 
     @Override
-    public void releaseFromMarket(List<Actor> actors) {
-        for (Actor actor : actors) {
+    public void releaseFromMarket(List<Сustomer> actors) {
+        for (Сustomer actor : actors) {
             System.out.println(actor.getName() + " вышел из магазина");
             actorList.remove(actor);
         }

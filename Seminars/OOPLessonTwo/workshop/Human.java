@@ -1,6 +1,6 @@
 package Seminars.OOPLessonTwo.workshop;
 
-public class Human extends Actor {
+public class Human extends Сustomer {
     public Human(String name) {
         super(name);
     }
