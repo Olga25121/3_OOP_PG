@@ -1,4 +1,4 @@
-package Seminars.OOPLessonOne;
+package Seminars.OOPLessonOne.workshop;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Seminars.OOPLessonOne;
+package Seminars.OOPLessonOne.workshop;
 
 public class BottleOfWater extends Product {
     private int volume;
