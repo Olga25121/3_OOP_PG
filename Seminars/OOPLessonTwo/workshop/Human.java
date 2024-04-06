@@ -1,4 +1,4 @@
-package Seminars.OOPLessonTwo;
+package Seminars.OOPLessonTwo.workshop;
 
 public class Human extends Actor {
     public Human(String name) {

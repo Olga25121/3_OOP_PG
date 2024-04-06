@@ -1,4 +1,4 @@
-package Seminars.OOPLessonTwo;
+package Seminars.OOPLessonTwo.workshop;
 
 public interface QueueBehaviour {
     void takeInQueue(Actor actor);

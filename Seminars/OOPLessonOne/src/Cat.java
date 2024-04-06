@@ -1,32 +1,24 @@
 package Seminars.OOPLessonOne.src;
 
-// import java.io.Serializable;
-// import java.util.Iterator;
+import java.util.List;
 
-public class Cat extends Animal  {
-    public Cat(String color){
-        this.color = color;
-    }
-
-    public Cat() {
-    }
-
+public class Cat extends Animal implements AnimalBehaivour {
+    List<String> list;//примеры
+    Dog dog;
     @Override
     public void voice() {
         System.out.println("мяу");
     }
 
-    @Override
-    public void hunt() {
-        System.out.println("кошка охотится на корм");
+
+
+    public void test() {
+
     }
 
-
-
     @Override
-    public String toString() {
-        return "Cat{" +
-                "color='" + color + '\'' +
-                '}';
+    public void bheaivour() {
+        System.out.println("Кошка охотится на мышей");
+
     }
 }

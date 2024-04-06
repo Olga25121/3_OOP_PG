@@ -1,4 +1,4 @@
-package Seminars.OOPLessonOne.src;
+package Seminars.OOPLessonTwo.src;
 
 public interface HuntingStyle {
     void hunt();

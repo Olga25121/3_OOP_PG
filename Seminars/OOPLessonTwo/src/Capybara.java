@@ -1,4 +1,4 @@
-package Seminars.OOPLessonOne.src;
+package Seminars.OOPLessonTwo.src;
 
 public class Capybara extends Animal {
     @Override

@@ -1,4 +1,4 @@
-package Seminars.OOPLessonTwo;
+package Seminars.OOPLessonTwo.workshop;
 import java.util.List;
 
 public interface MarketBehaviour {

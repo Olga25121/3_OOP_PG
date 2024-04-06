@@ -1,29 +1,18 @@
 package Seminars.OOPLessonOne.src;
 
-import java.util.LinkedList;
-
 public class Main {
     public static void main(String[] args) {
+//        Animal animal = new Animal();
+//        animal.setName("barsik");
+//        animal.setName("murzik");
+//        System.out.println(animal.getName() + " "+ animal.getAge());
         Cat cat = new Cat();
-        LinkedList<Animal> animals = new LinkedList<>();
-        cat.color = "gray";
+        Dog dog = new Dog();
+        cat.setName("murzik");
         cat.voice();
-        cat.hunt();
-
-        animals.add(cat);
-
-        Capybara capybara = new Capybara();
-        capybara.color = "orange";
-        capybara.voice();
-        Owl owl = new Owl();
-        owl.voice();
-      cat.voice();
-      animals.add(capybara);
-        capybara.hunt();
-        owl.hunt();
-        System.out.println(cat);
-        System.out.println(capybara);
-        cat.hello();
+        dog.voice();
+        cat.bheaivour();
+        dog.bheaivour();
 
     }
 }

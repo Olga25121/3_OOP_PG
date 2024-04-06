@@ -1,4 +1,4 @@
-package Seminars.OOPLessonTwo;
+package Seminars.OOPLessonTwo.workshop;
 
 public interface ActorBehaviour {
     void setMakeOrder(boolean isMakeOrder);
