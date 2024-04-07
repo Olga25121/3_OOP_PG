@@ -1,67 +1,33 @@
 package Seminars.OOPLessonTwo.workshop;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class Market implements QueueBehaviour, MarketBehaviour {
-    private List<Сustomer> actorList = new ArrayList<>();
 
-    @Override
-    public void giveOrders() {
-        for (Сustomer actor : actorList) {
-            if (actor.isMakeOrder) {
-                actor.setTakeOrder(true);
-                System.out.println(actor.getName() + " получил заказ");
-            }
-        }
+
+    public void acceptToMarket(Actor actor){
+
     }
 
-    @Override
-    public void releaseFromQueue() {
-        List<Сustomer> relasedActors = new ArrayList<>();
-        for (Сustomer actor : actorList) {
-            if (actor.isTakeOrder()) {
-                relasedActors.add(actor);
-                System.out.println(actor.getName() + " вышел из очереди");
-            }
-        }
-        releaseFromMarket(relasedActors);
+    public void releaseFromMarket(List<Actor> actors){
+
     }
 
-    @Override
-    public void takeInQueue(Сustomer actor) {
-        actorList.add(actor);
-        System.out.println(actor.getName() + " встал в очередь");
+    public void takeInQueue(Actor actor){
+
     }
 
-    @Override
-    public void takeOrders() {
-        for (Сustomer actor : actorList) {
-            if (!actor.isMakeOrder) {
-                actor.setMakeOrder(true);
-                System.out.println(actor.getName() + " сделал заказ");
-            }
-        }
+    public void takeOrders(){
+
     }
 
-    @Override
-    public void acceptToMarket(Сustomer actor) {
-        takeInQueue(actor);
-        System.out.println(actor.getName() + " пришёл в магазин");
+    public void giveOrders(){
+
     }
 
-    @Override
-    public void releaseFromMarket(List<Сustomer> actors) {
-        for (Сustomer actor : actors) {
-            System.out.println(actor.getName() + " вышел из магазина");
-            actorList.remove(actor);
-        }
-    }
+    public void releaseFromQueue(){
 
-    @Override
-    public void update() {
-        takeOrders();
-        giveOrders();
-        releaseFromQueue();
     }
 }
+

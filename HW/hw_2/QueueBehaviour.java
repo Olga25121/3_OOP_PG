@@ -1,8 +1,8 @@
-package Seminars.OOPLessonTwo.workshop;
+package HW.hw_2;
 
 public interface QueueBehaviour {
     void takeInQueue(Actor actor);
-    void takeOrders();
-    void giveOrders();
+    void takeOrder();
+    void giveOrder();
     void releaseFromQueue();
 }

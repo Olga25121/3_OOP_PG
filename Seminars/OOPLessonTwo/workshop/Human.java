@@ -1,13 +1,26 @@
 package Seminars.OOPLessonTwo.workshop;
+public class Human extends Actor {
 
-public class Human extends Сustomer {
     public Human(String name) {
-        super(name);
+        this.name= name;
     }
 
     @Override
-    String getName() {
+    public String getName() {
+
         return name;
+    }
+
+    @Override
+    public void setMakeOrder() {
+        isMakeOrder = true;
+
+    }
+
+    @Override
+    public void setTakeOrder() {
+        isTakeOrder = true;
+
     }
 
     @Override
@@ -20,13 +33,4 @@ public class Human extends Сustomer {
         return isTakeOrder;
     }
 
-    @Override
-    public void setMakeOrder(boolean isMakeOrder) {
-        super.isMakeOrder = isMakeOrder;
-    }
-
-    @Override
-    public void setTakeOrder(boolean isTakeOrder) {
-        super.isTakeOrder = isTakeOrder;
-    }
 }
