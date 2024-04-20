@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library <T extends Book> {
-
+    
     private List<T> books = new ArrayList<>();
     private List<T> givenBooks = new ArrayList<>();
+
+    
 
     public void addBook(T book) {
         books.add(book);
@@ -35,6 +37,22 @@ public class Library <T extends Book> {
             System.out.println(book);
         }
         System.out.println();
+    }
+
+    public List<T> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<T> books) {
+        this.books = books;
+    }
+
+    public List<T> getGivenBooks() {
+        return givenBooks;
+    }
+
+    public void setGivenBooks(List<T> givenBooks) {
+        this.givenBooks = givenBooks;
     }
     
 }
