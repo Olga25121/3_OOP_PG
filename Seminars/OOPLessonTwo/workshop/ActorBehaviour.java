@@ -1,8 +1,0 @@
-package Seminars.OOPLessonTwo.workshop;
-
-public interface ActorBehaviour {
-    void setMakeOrder();
-    void setTakeOrder();
-    boolean isMakeOrder();
-    boolean isTakeOrder();
-}
