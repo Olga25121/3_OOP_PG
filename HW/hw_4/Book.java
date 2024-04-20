@@ -2,22 +2,26 @@ package HW.hw_4;
 
 public class Book<T> {
 
-    private T bookName;
+    private T bookTitle;
 
-    public Book(T bookName) {
-        this.bookName = bookName;
+    public Book(T bookTitle) {
+        this.bookTitle = bookTitle;
     }
 
     public Book() {
         
     }
 
-    public T getBookName() {
-        return bookName;
+    public T getbookTitle() {
+        return bookTitle;
     }
+    
 
     @Override
     public String toString() {
-        return bookName.toString();
+        return bookTitle.toString();
     }
 }
+
+
+
