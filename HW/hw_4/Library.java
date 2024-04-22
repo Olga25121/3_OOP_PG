@@ -3,7 +3,7 @@ package HW.hw_4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library <T extends Book> {
+public class Library <T extends Book<String>> {
     
     private List<T> books = new ArrayList<>();
     private List<T> givenBooks = new ArrayList<>();
