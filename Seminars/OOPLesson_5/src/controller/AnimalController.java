@@ -2,10 +2,10 @@ package Seminars.OOPLesson_5.src.controller;
 
 
 
-import model.Animal;
-import service.AnimalService;
-
 import java.util.List;
+
+import Seminars.OOPLesson_5.src.model.Animal;
+import Seminars.OOPLesson_5.src.service.AnimalService;
 
 public class AnimalController {
     private AnimalService animalService = new AnimalService();

@@ -1,8 +1,8 @@
 package Seminars.OOPLesson_5.src;
 
-import model.Cat;
-import model.Dog;
-import view.AnimalView;
+import Seminars.OOPLesson_5.src.model.Cat;
+import Seminars.OOPLesson_5.src.model.Dog;
+import Seminars.OOPLesson_5.src.view.AnimalView;
 
 public class Main {
     public static void main(String[] args) {

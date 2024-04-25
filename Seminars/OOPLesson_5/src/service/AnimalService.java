@@ -2,12 +2,12 @@ package Seminars.OOPLesson_5.src.service;
 
 
 
-import model.Animal;
-import model.Cat;
-import model.Dog;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import Seminars.OOPLesson_5.src.model.Animal;
+import Seminars.OOPLesson_5.src.model.Cat;
+import Seminars.OOPLesson_5.src.model.Dog;
 
 public class AnimalService {
     private List<Animal> animals;
