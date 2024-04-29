@@ -1,29 +1,24 @@
 package model;
 
 public class Student extends User{
+    private int studentId;
 
-    private int studentID;
-    public Student(String firstName, String secondName, String lastName, int studentID) {
-        super(firstName, secondName, lastName);
-        this.studentID = studentID;
+    public Student(String name, int studentId) {
+        super(name);
+        this.studentId = studentId;
     }
 
-    public int getStudentID() {
-        return studentID;
+    public int getStudentId() {
+        return studentId;
     }
 
-    public void setStudentID(int studentID) {
-        this.studentID = studentID;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
-    
     @Override
     public String toString() {
-        return "Студент {" + "ID =" + studentID + "  Имя: " + super.getFirstName() + "  Отчество: "
-                + super.getSecondName() + "  Фамилия: " + super.getLastName() + "}";
+      
+        return "Студент {" + "ID =" + getStudentId() + "  Имя: " + super.getName()  + "}";
     }
-
-    
-
-    
 }

@@ -1,21 +1,30 @@
 package service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import model.Student;
 import model.Group;
-import model.User;
+import model.Teacher;
 
-public class GroupService  {
+public class GroupService {   
 
+    private Map<String, Group> studyGroups;
     
-
-    public Group createGroup (int number, User teacher, List<User> students) {
-
-
-        return new Group(number,teacher,students);
-
-               
+    public GroupService(){
+        this.studyGroups = new HashMap<>();
+    }   
+    
+    public Group createStudyGroup(Teacher teacher, List<Student> students) {
+        return new Group(teacher, students);
     }
-   
-    
+
+    public void addGroup(String teacherName, Group group) {
+        studyGroups.put(teacherName, group);
+    }
+
+    public Group getGroupByTeacher(String teacherName) {
+        return studyGroups.get(teacherName);
+    }
 }

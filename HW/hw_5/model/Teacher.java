@@ -1,29 +1,23 @@
 package model;
 
-public class Teacher extends User {
+public class Teacher extends User{
+    private String subject;
 
-    private int teacherID;
-
-    public int getTeacherID() {
-        return teacherID;
+    public Teacher(String name, String subject) {
+        super(name);
+        this.subject = subject;
     }
 
-    public void setTeacherID(int teacherID) {
-        this.teacherID = teacherID;
+    public String getsubject() {
+        return subject;
     }
 
-    public Teacher(String firstName, String secondName, String lastName, int teacherID) {
-        super(firstName, secondName, lastName);
-        this.teacherID = teacherID;
-
+    public void setsubject(String subject) {
+        this.subject = subject;
     }
-    
 
     @Override
     public String toString() {
-        return " Педагог [" + "ID =" + teacherID + " Имя: " + super.getFirstName() + "  Отчество: "
-                + super.getSecondName() + " + Фамилия: " + super.getLastName();
+        return getsubject();
     }
-
-    
 }

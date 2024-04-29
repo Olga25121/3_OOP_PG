@@ -1,34 +1,28 @@
 package model;
 
 public abstract class User {
-    public User(String firstName, String secondName, String lastName) {
-        this.firstName = firstName;
-        this.secondName = secondName;
-        this.lastName = lastName;
+    private String name;
+   
+    public User(String name) {
+        this.name = name;
     }
-    private String firstName;
 
-    private String secondName;
-    private String lastName;
-    public String getFirstName() {
-        return firstName;
+    public User() {
     }
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+
+    public String getName() {
+        return name;
     }
-    public String getSecondName() {
-        return secondName;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+
+   
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+             + '}';
     }
-    public String getLastName() {
-        return lastName;
-    }
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    } 
-    
-    
-    
 }

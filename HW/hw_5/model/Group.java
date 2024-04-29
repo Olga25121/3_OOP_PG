@@ -3,47 +3,39 @@ package model;
 import java.util.List;
 
 public class Group {
+    private Teacher teacher;
+    private List<Student> students;
 
-    private int numberGroup;
-    private User teacherGroup;
-    private List<User> students;
-
-    public Group(int numberGroup, User teacherGroup, List<User> students) {
-        this.teacherGroup = teacherGroup;
+    public Group(Teacher teacher, List<Student> students){
+        this.teacher = teacher;
         this.students = students;
-        this.numberGroup = numberGroup;
     }
 
-    public User getTeacherGroup() {
-        return teacherGroup;
+    public Group(){
+        
     }
 
-    public void setTeacherGroup(Teacher teacherGroup) {
-        this.teacherGroup = teacherGroup;
+    public Teacher getTeacher() {
+        return teacher;
     }
 
-    public List<User> getStudents() {
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<User> students) {
-        this.students = students;
-    }
-
-    public int getNumberGroup() {
-        return numberGroup;
-    }
-
-    public void setNumberGroup(int numberGroup) {
-        this.numberGroup = numberGroup;
-    }
-
+   
     @Override
     public String toString() {
-        return "Группа № "+ numberGroup +
-                 teacherGroup +
-                ", students:" + students +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Предмет - ").append(teacher).append("\n");
+        sb.append("Студенты:\n");
+        for (User student : students) {
+            sb.append(student).append("\n");
+        }
+        return sb.toString();
     }
-
 }

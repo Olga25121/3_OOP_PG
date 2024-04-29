@@ -1,10 +1,21 @@
 package view;
 
-import model.Student;
+import java.util.List;
+
+import controller.Controller;
+import model.User;
 
 public class StudentView {
-    public void printOnConsole ( Student student){
-        System.out.println(student.toString());
+    private Controller controller = new Controller();
+
+    public void userList (User user){
+        controller.userList(user);
+        System.out.println("Добавлен " + user);
+    }
+    
+    public List<User> getUserList(){
+        return controller.getUserList("student");
+        
     }
     
 }
