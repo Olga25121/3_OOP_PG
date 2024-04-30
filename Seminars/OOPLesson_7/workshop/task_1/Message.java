@@ -1,4 +1,4 @@
-package Seminars.OOPLesson_7.workshop;
+package Seminars.OOPLesson_7.workshop.task_1;
 
 //Создайте интерфейс Message, который определяет методы для отправки и получения текстового сообщения.
 /**

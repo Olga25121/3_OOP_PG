@@ -1,4 +1,4 @@
-package Seminars.OOPLesson_7.workshop;
+package Seminars.OOPLesson_7.workshop.task_1;
 
 //Напишите клиентский код, который будет использовать декоратор для отправки и получения 
 //текстовых сообщений с дополнительной информацией.

@@ -1,4 +1,4 @@
-package Seminars.OOPLesson_7.workshop;
+package Seminars.OOPLesson_7.workshop.task_1;
 
 //Реализуйте класс TextMessage, представляющий базовое текстовое сообщение.
 

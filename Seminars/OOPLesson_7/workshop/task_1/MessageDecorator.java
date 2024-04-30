@@ -1,4 +1,4 @@
-package Seminars.OOPLesson_7.workshop;
+package Seminars.OOPLesson_7.workshop.task_1;
 
 // Создайте декоратор MessageDecorator, который будет добавлять дополнительную информацию 
 //к текстовому сообщению (например, дату отправки).
