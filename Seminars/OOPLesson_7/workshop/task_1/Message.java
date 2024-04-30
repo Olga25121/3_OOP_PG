@@ -8,4 +8,7 @@ public interface Message {
 
     void sendMessage(String text);
     void getMessage();
+    static String getText() {
+        return null;
+    }
 }
